@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tags Practice</title>
+</head>
+
+<body>
+
+    <h1>HTML Media & Link Tags</h1>
+
+    <!-- 1. Anchor Tag -->
+    <h2>1. Anchor &lt;a&gt;</h2>
+    <a href="https://www.google.com">Open Google</a>
+
+    <br><br>
+
+    <!-- 2. Image Tag -->
+    <h2>2. Image &lt;img&gt;</h2>
+    <img src="https://picsum.photos/300/200" 
+         alt="Sample Image" width="300">
+
+    <br><br>
+
+    <!-- 3. Audio Tag -->
+    <h2>3. Audio &lt;audio&gt;</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <br><br>
+
+    <!-- 4. Video Tag -->
+    <h2>4. Video &lt;video&gt;</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <br><br>
+
+    <!-- 5. Source Tag -->
+    <h2>5. Source &lt;source&gt;</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <!-- 6. Track Tag -->
+    <h2>6. Track &lt;track&gt;</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+
+        <track src="subtitle.vtt"
+               kind="subtitles"
+               srclang="en"
+               label="English">
+    </video>
+
+    <br><br>
+
+    <!-- 7. Iframe -->
+    <h2>7. Iframe &lt;iframe&gt;</h2>
+    <iframe
+        src="https://www.wikipedia.org"
+        width="500"
+        height="300">
+    </iframe>
+
+    <br><br>
+
+    <!-- 8. Embed -->
+    <h2>8. Embed &lt;embed&gt;</h2>
+    <embed
+        src="sample.pdf"
+        width="500"
+        height="400">
+
+    <br><br>
+
+    <!-- 9. Object -->
+    <h2>9. Object &lt;object&gt;</h2>
+    <object
+        data="sample.pdf"
+        width="500"
+        height="400">
+    </object>
+
+    <br><br>
+
+    <!-- 10. Picture -->
+    <h2>10. Picture &lt;picture&gt;</h2>
+    <picture>
+        <source media="(max-width: 600px)"
+                srcset="https://picsum.photos/300/200">
+
+        <img src="https://picsum.photos/600/300"
+             alt="Responsive Image"
+             width="500">
+    </picture>pool
+
+    <br><br>
+
+    <!-- 11. Map -->
+    <h2>11. Image Map &lt;map&gt;</h2>
+
+    <img src="https://picsum.photos/600/300"
+         alt="Clickable Image"
+         width="600"
+         usemap="#mymap">
+
+    <map name="mymap">
+
+        <!-- Clickable area -->
+        <area shape="rect"
+              coords="0,0,300,300"
+              href="https://www.google.com"
+              alt="Google">
+
+        <area shape="rect"
+              coords="300,0,600,300"
+              href="https://www.youtube.com"
+              alt="YouTube">
+
+    </map>
+
+</body>
+</html>
+
+Note: "audio.mp3", "video.mp4", "subtitle.vtt", aur "sample.pdf" ko same folder mein rakhoge to respective examples properly work karenge. "map" + "area" wale example mein image ke coordinates ke hisaab se clickable areas hain.
